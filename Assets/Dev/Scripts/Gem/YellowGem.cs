@@ -7,6 +7,6 @@ public class YellowGem : AGem
     public override void ITrig()
     {
         base.ITrig();
-        
+        YellowGemFrame.OnUpdateGreenGemFrame();
     }
 }

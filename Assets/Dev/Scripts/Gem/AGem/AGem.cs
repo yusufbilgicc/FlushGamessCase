@@ -13,55 +13,73 @@ public abstract class AGem : MonoBehaviour, ITrigger
     public GridController myGrid;
     public Transform gemModel;
     public Collider myCol;
-
+    public float price;
     public float gemUpTime;
+    public bool collectable;
 
-    public Sequence _seq;
+    public Sequence moveMoveSeq;
 
-    private Sequence Seq
+    public Sequence growSeq;
+
+    private Sequence GrowSeq
     {
-        get => _seq;
+        get => growSeq;
         set
         {
-            _seq = value;
-            _seq = DOTween.Sequence();
-            Seq.Append(transform.DOMoveY(.15f, gemUpTime).SetEase(Ease.Linear)).SetLoops(-1, LoopType.Yoyo);
-        }
-    }
+            growSeq = value;
+            growSeq = DOTween.Sequence();
+            growSeq.Append(DOTween.To(() => gemModel.localScale, x => gemModel.localScale = x, Vector3.one, gemData.growTime).OnUpdate(
+                () =>
+                {
+                    if (gemModel.localScale.x >= 0.25f&& !collectable)
+                    {
+                        collectable = true;
+                        myCol.enabled = true;
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            Seq.Kill();
+                    }
+                }).OnComplete(OnGrownComplete));
         }
     }
+    private Sequence MoveSeq
+    {
+        get => moveMoveSeq;
+        set
+        {
+            moveMoveSeq = value;
+            moveMoveSeq = DOTween.Sequence();
+            MoveSeq.Append(transform.DOMoveY(.15f, gemUpTime).SetEase(Ease.Linear)).SetLoops(-1, LoopType.Yoyo);
+        }
+    }
+    
+
+   
 
     public void StartGrow()
     {
-        DOTween.To(() => gemModel.localScale, x => gemModel.localScale = x, Vector3.one, gemData.growTime).OnComplete(
-            OnGrownComplete);
+        GrowSeq = growSeq;
+        GrowSeq.Play();
     }
 
     private void StartTween()
     {
-        Seq = _seq;
-        Seq.Play();
+        MoveSeq = moveMoveSeq;
+        MoveSeq.Play();
     }
 
     public void KillTween()
     {
-        Seq.Kill();
+        MoveSeq.Kill();
+        GrowSeq.Kill();
     }
     public void OnGrownComplete()
     {
         StartTween();
-        myCol.enabled = true;
     }
     private void OnCollected()
     {
         myGrid.StartSpawnProcess();
         KillTween();
+        SetGemPrice();
         transform.DOMoveY(0, 0).OnComplete(() =>
         {
             PlayerCollectList.On_AddList(this);
@@ -69,10 +87,15 @@ public abstract class AGem : MonoBehaviour, ITrigger
         });
     }
 
-   
+
+    public void SetGemPrice()
+    {
+        price = gemData.gemPrice+gemModel.localScale.x*100;
+    }
     public virtual void ITrig()
     {
         myCol.enabled = false;
+        
         OnCollected();
     }
 }

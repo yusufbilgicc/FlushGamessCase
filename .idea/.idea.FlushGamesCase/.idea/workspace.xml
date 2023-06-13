@@ -9,6 +9,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ba783288ca164d3099898a8819fcec1c159e00/23/6c1e5fc6/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/AllGemsPop-Up/FramePopUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/AllGemsPop-Up/TotalGemFrame/GreenGemFrame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/Camera/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/CurrencyController/CurrencyController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/Gem/AGem/AGem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/Gem/GemData/GemData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/Gem/GreenGem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -24,10 +28,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/Player/PlayerMove/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/Player/PlayerTrigger/PlayerTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/SellArea/SellArea.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../TowerDefance/My project/Assets/Scripts/Coin/CoinController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../TowerDefance/My project/Assets/Scripts/ObjectPooling/HandFactory.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../TowerDefance/My project/Assets/Scripts/ObjectPooling/ObjectPooling.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../TowerDefance/My project/Assets/Scripts/UsufController/UsufController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Scrollbar.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -87,6 +88,8 @@
       <updated>1686496268731</updated>
       <workItem from="1686496297091" duration="14630000" />
       <workItem from="1686554336090" duration="17745000" />
+      <workItem from="1686587606918" duration="5297000" />
+      <workItem from="1686643196308" duration="5556000" />
     </task>
     <servers />
   </component>

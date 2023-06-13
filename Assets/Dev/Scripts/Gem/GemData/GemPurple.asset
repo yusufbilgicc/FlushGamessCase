@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: GemPurple
   m_EditorClassIdentifier: 
   id: 1
-  gemPrice: 5
+  gemPrice: 2
   growTime: 8

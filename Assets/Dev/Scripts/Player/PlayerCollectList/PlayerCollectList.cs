@@ -52,11 +52,12 @@ public class PlayerCollectList : MonoBehaviour
         {
             return;
         }
-        AGem gem = gemList[^1]; // son eleman anlamına geliyo sanırım
+        AGem gem = gemList[^1];
         gem.transform.SetParent(null);
         On_RemoveList(gem);
         gem.transform.DOJump(pos.position, 1, 1, .5f).OnComplete(() => { gem.gameObject.SetActive(false); });
         // giveMoney
+        CurrencyController.OnAddMoney(gem.price);
     }
 
     public static void On_AddList(AGem obj)

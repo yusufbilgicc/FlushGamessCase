@@ -10,7 +10,7 @@ public class PlayerTrigger : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (playerMove.isMove)
+        // if (playerMove.isMove)
         {
             CheckTrig();
         }

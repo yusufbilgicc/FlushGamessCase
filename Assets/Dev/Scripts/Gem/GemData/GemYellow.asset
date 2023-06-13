@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: GemYellow
   m_EditorClassIdentifier: 
   id: 2
-  gemPrice: 7
+  gemPrice: 3
   growTime: 10

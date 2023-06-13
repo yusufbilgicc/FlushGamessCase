@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public PlayerAnimController anim;
 
     public bool isMove;
-    private void LateUpdate()
+    private void Update()
     {
         Movement();
     }

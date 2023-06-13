@@ -8,6 +8,7 @@ public class GreenGem : AGem
     public override void ITrig()
     {
         base.ITrig();
+        GreenGemFrame.OnUpdateGreenGemFrame();
     }
 
    
