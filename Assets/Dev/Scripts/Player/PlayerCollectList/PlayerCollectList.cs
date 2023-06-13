@@ -7,7 +7,6 @@ using UnityEngine;
 public class PlayerCollectList : MonoBehaviour
 {
     public List<AGem> gemList = new List<AGem>();
-    public float yVal;
 
     public static event Action<AGem> OnAddList;
     public static event Action<AGem> OnRemoveList;

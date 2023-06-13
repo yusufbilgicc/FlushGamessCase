@@ -13,6 +13,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/AllGemsPop-Up/TotalGemFrame/GreenGemFrame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/Camera/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/CurrencyController/CurrencyController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/DenemeDesigner/DenemeDesigner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/Gem/AGem/AGem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/Gem/GemData/GemData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/Gem/GreenGem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -29,6 +30,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/Player/PlayerTrigger/PlayerTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dev/Scripts/SellArea/SellArea.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Scrollbar.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Sacrifice-Puzzle-development/Assets/Akali/Scripts/ScriptableObjects/LevelListScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Sacrifice-Puzzle-development/Assets/Scripts/Maze/MazeDesigner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Sacrifice-Puzzle-development/Assets/Scripts/Maze/MazeScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -89,7 +93,8 @@
       <workItem from="1686496297091" duration="14630000" />
       <workItem from="1686554336090" duration="17745000" />
       <workItem from="1686587606918" duration="5297000" />
-      <workItem from="1686643196308" duration="5556000" />
+      <workItem from="1686643196308" duration="6817000" />
+      <workItem from="1686660374669" duration="1903000" />
     </task>
     <servers />
   </component>
