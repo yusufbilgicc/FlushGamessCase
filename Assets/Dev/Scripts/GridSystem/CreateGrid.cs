@@ -15,11 +15,11 @@ public class CreateGrid : MonoBehaviour
     private void Start()
     {
         
-        Invoke(nameof(OnCreateGrid),0.1f);
+        // Invoke(nameof(OnCreateGrid),0.1f);
     }
 
     
-    private void OnCreateGrid()
+    public void OnCreateGrid()
     {
         float yVal = 0;
         for (int i = 0; i < y; i++)
@@ -30,10 +30,35 @@ public class CreateGrid : MonoBehaviour
             {
                 GridFactory.On_CreateGrid(0, new Vector3(transform.position.x + xVal, 0, transform.position.z + yVal),
                     Quaternion.identity, transform);
+                
                 xVal += _sideVal;
             }
 
             yVal += _downVal;
         }
     }
+
+#if UNITY_EDITOR
+
+    public GameObject grid;
+    public void CreateOnEditor(int x,int y)
+    {
+        float yVal = 0;
+        for (int i = 0; i < y; i++)
+        {
+            float xVal = 0;
+
+            for (int j = 0; j < x; j++)
+            {
+                Instantiate(grid, new Vector3(transform.position.x + xVal, 0, transform.position.z + yVal),
+                    Quaternion.identity,transform);
+                
+                xVal += _sideVal;
+            }
+
+            yVal += _downVal;
+        }
+    }
+    
+#endif
 }

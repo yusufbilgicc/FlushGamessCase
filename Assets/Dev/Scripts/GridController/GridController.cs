@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class GridController : MonoBehaviour
 {
@@ -8,6 +10,11 @@ public class GridController : MonoBehaviour
 
     public float spawnRate;
 
+
+    private void Start()
+    {
+        CreateGem();
+    }
 
     public void CreateGem()
     {
