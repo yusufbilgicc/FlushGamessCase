@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 138.78, y: -61.389008}
-  m_SizeDelta: {x: -277.56, y: -122.78}
+  m_AnchoredPosition: {x: 88.57468, y: -61.389008}
+  m_SizeDelta: {x: -177.1492, y: -122.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7762605776658997403
 CanvasRenderer:
@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Collect Count : 15'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ab8358303d1e13f4aa476c7e1a495b9d, type: 2}
+  m_sharedMaterial: {fileID: 2593169048095511967, guid: ab8358303d1e13f4aa476c7e1a495b9d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 62.75
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -170,8 +170,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 138.77777, y: 68}
-  m_SizeDelta: {x: -277.5555, y: -135.6938}
+  m_AnchoredPosition: {x: 88.57208, y: 68}
+  m_SizeDelta: {x: -177.144, y: -135.6938}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5171608158240395802
 CanvasRenderer:
@@ -203,8 +203,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Gem Type : Green Gem'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ab8358303d1e13f4aa476c7e1a495b9d, type: 2}
+  m_sharedMaterial: {fileID: 2593169048095511967, guid: ab8358303d1e13f4aa476c7e1a495b9d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.5
+  m_fontSize: 56.1
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -408,6 +408,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frameData: {fileID: 11400000, guid: 749216a60f65f1543b10958206a2d44c, type: 2}
+  totalCount: 0
+  totalCountKey: 
   gemTypeText: {fileID: 5171608158240395801}
   gemCountText: {fileID: 1716244080118075959}
   frameIcon: {fileID: 7105950116835739250}
@@ -446,8 +448,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 119.02515, y: -0.0000038146973}
-  m_SizeDelta: {x: 238.0503, y: 238.0499}
+  m_AnchoredPosition: {x: 108, y: -3}
+  m_SizeDelta: {x: 203.3861, y: 203.3858}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4856823186184615718
 CanvasRenderer:
